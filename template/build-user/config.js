@@ -9,7 +9,7 @@ module.exports = {
         { title: '80-static', url: '//static.tcy365.com', env: 'production' }
     ],
     devServer: {
-        host: 'localhost',
+        //host: 'localhost',
         port: 8080, // 端口号
         https: false,
         open: true, // 配置自动启动浏览器

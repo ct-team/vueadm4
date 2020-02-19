@@ -47,9 +47,13 @@ var portReplace = function(obj) {
                 throw err;
             }
 
+            // var result = data.replace(
+            //     /(={1})((\.)?\/assets)/gi,
+            //     '$1' + baseUrl
+            // );
             var result = data.replace(
-                /(={1})((\.)?\/assets)/gi,
-                '$1' + baseUrl
+                /(={1}(\")?(\')?)((\.)?\/assets\/)/gi,
+                '$1' + baseUrl + '/'
             );
 
             result = result.replace(/<ctEnv>/gi, env);

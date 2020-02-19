@@ -27,7 +27,13 @@ module.exports.getPages = function() {
             // 在这个页面中包含的块，默认情况下会包含
             // 提取出来的通用 chunk 和 vendor chunk。
             chunks: ['chunk-vendors', 'chunk-common', filename],
-            inject: false
+            inject: false,
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true,
+                minifyCSS: true,
+                minifyJS: true
+            }
         };
     });
     console.log(root + '/*/main.js');

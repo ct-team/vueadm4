@@ -12,7 +12,7 @@
         <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1" />
         <link rel="shortcut icon" href="//static.tcy365.com/uc/common/images/favicon.ico" />
         <!-- start 不要修改 -->
-        <% if(htmlWebpackPlugin.options.currenv == "production") { %>
+        <% if(process.env.NODE_ENV !== "development") { %>
         <meta name="AppPublic" content="<ctAppPublic>" />
         <script>
             window.CTPrefConfig = {
