@@ -2,11 +2,11 @@ module.exports = {
     appVersion: '1.0.0', // 项目版本
     appUrl: '/test/t1/', // 项目路径  如   /mobile/test/
     list: [
-        { title: '1505-stable', url: '//static.tcy365.org:1505', env: 1505 },
-        { title: '1507-test', url: '//static.tcy365.org:1507', env: 1507 },
-        { title: '1506-develop', url: '//static.tcy365.org:1506', env: 1506 },
-        { title: '2505-pre', url: '//static.tcy365.com:2505', env: 2505 },
-        { title: '80-static', url: '//static.tcy365.com', env: 'production' }
+        { title: '1505-stable', url: '//staticadm.tcy365.org:1505', env: 1505 },
+        { title: '1507-test', url: '//staticadm.tcy365.org:1507', env: 1507 },
+        { title: '1506-develop', url: '//staticadm.tcy365.org:1506', env: 1506 },
+        { title: '2505-pre', url: '//staticadm.tcy365.com:2505', env: 2505 },
+        { title: '80-static', url: '//staticadm.tcy365.com', env: 'production' }
     ],
     devServer: {
         //host: 'localhost',
